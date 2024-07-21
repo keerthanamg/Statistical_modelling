@@ -74,4 +74,37 @@ Now, let’s have a look at how danceability, energy, and other features impact 
 - Danceability vs. popularity
 - Energy vs. popularity
 
-!["Alt text"]()
+!["Alt text"](music-popularity-4.webp)
+
+The segmented scatter plots for Danceability vs. Popularity and Energy vs. Popularity, divided by whether tracks are explicit or not, show some interesting trends:
+
+- Danceability vs. Popularity: Both explicit and non-explicit tracks show a positive trend between danceability and popularity. However, explicit tracks tend to cluster slightly higher on the popularity scale at similar levels of danceability compared to non-explicit tracks.
+- Energy vs. Popularity: Similar to danceability, there’s a generally positive relationship between energy and popularity for both explicit and non-explicit tracks. Explicit tracks appear to achieve higher popularity at lower energy levels compared to non-explicit tracks, suggesting that the explicit content may appeal to certain listener groups more, irrespective of energy level.
+
+
+## Statistical Modelling of Music Features
+Now, let’s quantitatively assess the impact of various features on the popularity of music tracks using statistical modelling. We can use a regression model. This will allow us to understand which features are significant predictors of popularity, and quantify their impact.
+
+For statistical modelling, we’ll use features that show promising relationships and convert categorical data (like Explicit) into a format suitable for regression analysis. We’ll also include the Key and Mode as they might carry additional information about the musical properties of the tracks.
+
+Let’s start by preparing the features and setting up our dataset for statistical modelling using Linear Regression:
+- Preparing the dataset for regression
+- Convert 'Explicit' from boolean to integer (0 or 1)
+- Selecting features and target for the model
+- Standardizing the features
+- Splitting the dataset into training and testing sets
+- Initializing and training the linear regression model
+- Predicting on the test set
+- Evaluating the model
+- Outputting the coefficients and performance metrics
+
+The output above represents the coefficients from the regression model quantifying the impact of various musical features on track popularity. A positive coefficient indicates that an increase in the feature is associated with an increase in popularity, and vice versa for a negative coefficient.
+
+For instance, Danceability (1.249640), Loudness (1.141456), Acousticness (2.469403), and Valence (2.125671) all have positive coefficients, suggesting that tracks with higher values in these features tend to be more popular.
+
+On the contrary, Energy (-3.204815), Key (-3.189486), Mode (-5.859715), and Tempo (-1.865736) are negatively associated with popularity, indicating that higher values in these features could lead to lower popularity.
+
+The coefficients for Explicit (1.620926e-14) and Speechiness (0.03398224) suggest a negligible impact on the popularity, with Explicit essentially having no effect. Instrumentalness (0.3390750) shows a minor positive influence.
+
+## Summary
+So, Statistical modelling is a mathematical framework used to describe the relationships between variables in the form of equations, usually involving stochastic elements (randomness). It is primarily focused on inference, which means understanding the relationships between variables and quantifying how certain factors influence outcomes.
