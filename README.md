@@ -59,4 +59,19 @@ Now, let’s delve into the individual feature impacts on the popularity of musi
 For each of these features, we’ll create scatter plots to visualize their relationship with popularity. This will help us understand how each feature might influence the popularity of a track:
 - Creating scatter plots for various feature
 
+!["Alt text"](music-popularity-3.webp)
+
+Here are the scatter plots visualizing the relationships between various musical features and the popularity of tracks:
+
+- Danceability vs. Popularity: Higher danceability scores tend to correlate with moderate to high popularity. This suggests that more danceable tracks are generally more popular.
+- Energy vs. Popularity: Similar to danceability, higher energy levels in tracks often correlate with higher popularity. This aligns with the trend that energetic tracks are preferred by listeners.
+- Loudness vs. Popularity: There’s a trend showing that louder tracks tend to have higher popularity scores. This might reflect listener preference for more vibrant and powerful sound profiles.
+- Acousticness vs. Popularity: Acousticness shows a somewhat inverse relationship with popularity, where tracks with lower acousticness tend to be more popular. This could suggest that highly acoustic tracks are less favoured in the dataset’s music genre context.
+- Valence vs. Popularity: Tracks with higher valence, which indicates a happier or more positive tone, show a slight tendency towards higher popularity. This might imply that listeners prefer tracks that have a positive emotional tone.
+  
+Now, let’s have a look at how danceability, energy, and other features impact popularity differently when the track is explicit versus when it’s not. This can reveal whether explicit content has a modifying effect on the relationship between audio features and popularity:
+- Creating plots for danceability vs. popularity and energy vs. popularity, segmented by explicit content
+- Danceability vs. popularity
+- Energy vs. popularity
+
 !["Alt text"]()
