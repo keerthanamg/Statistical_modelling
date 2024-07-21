@@ -38,3 +38,8 @@ The unnecessary Unnamed: 0 column has been removed.
 Missing values in the Track Name, Artists, and Album Name columns have been filled with “Unknown”.
 Now, let’s examine the distribution of the Popularity score and then look at correlations between Popularity and other musical features. We’ll generate some plots to visualize these aspects:
 - Plotting the distribution of popularity
+!["Alt text"](music-popularity-1.webp)
+
+The distribution of popularity scores shows a range mainly between 40 to 70, with peaks around the 50s and 60s. This indicates that most tracks in this dataset have moderate to high popularity.
+
+Now, let’s have a look at the correlation matrix:
