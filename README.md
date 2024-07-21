@@ -43,3 +43,20 @@ Now, let’s examine the distribution of the Popularity score and then look at c
 The distribution of popularity scores shows a range mainly between 40 to 70, with peaks around the 50s and 60s. This indicates that most tracks in this dataset have moderate to high popularity.
 
 Now, let’s have a look at the correlation matrix:
+!["Alt text"](music-popularity-2.webp)
+
+The heatmap provides insights into how various features are related to each other and the popularity of the tracks. Notably, Popularity seems to have some level of positive correlation with Loudness and Energy, while it has slight negative correlations with Acousticness. This suggests that louder and more energetic tracks tend to be more popular, while more acoustic tracks tend to be less popular.
+
+Danceability and Valence (the musical positiveness conveyed by a track) also show some positive correlation with popularity, indicating that tracks that are more danceable and have a happier tone might be preferred by listeners.
+
+Now, let’s delve into the individual feature impacts on the popularity of music tracks. We’ll focus on several key features based on our initial observations from the correlation matrix. Specifically, we’ll analyze:
+- Danceability vs. Popularity
+- Energy vs. Popularity
+- Loudness vs. Popularity
+- Acousticness vs. Popularity
+- Valence vs. Popularity
+  
+For each of these features, we’ll create scatter plots to visualize their relationship with popularity. This will help us understand how each feature might influence the popularity of a track:
+- Creating scatter plots for various feature
+
+!["Alt text"]()
